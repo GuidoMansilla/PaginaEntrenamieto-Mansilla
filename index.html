@@ -13,41 +13,64 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <nav class="navbar navbar-expand-lg bg-black m-0 p-0">
-                    <div class="col-sm-6 col-md-4 col-xl-4 d-flex justify-content-center">
-                        <img id="headerLogo" src="assets/img/logo.png" alt="logo sitio">
-                    </div>
-                    <div class="col-sm-6 col-md-8 col-xl-8 d-flex justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav" id="ulNav">
-                            <li class="nav-item">
-                                <a class="link-light nav-link nav__whiteLink" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link-light nav-link nav__whiteLink" href="pages/entrenamientos.html">Entrenamientos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link-light nav-link nav__whiteLink" href="pages/profesores.html">Profesores</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link-light nav-link nav__whiteLink" href="pages/opiniones.html">Opiniones</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link-light nav-link nav__whiteLink" href="pages/contacto.html">Contacto</a>
-                            </li>
-                        </ul>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                    <div class="container-fluid">
+                        <div class="col-sm-6 col-md-4 col-xl-4 d-flex justify-content-center">
+                            <img id="headerLogo" src="assets/img/logo.png" alt="logo sitio">
+                        </div>
 
-                        <img id="menuBurger" src="assets/img/burguer-icon.png" alt="navegador">                        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link link-light nav-link nav__whiteLink" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-light nav-link nav__whiteLink" href="pages/entrenamientos.html">Entrenamientos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-light nav-link nav__whiteLink" href="pages/profesores.html">Profesores</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-light nav-link nav__whiteLink" href="pages/quienesSomos.html">Quienes Somos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-light nav-link nav__whiteLink" href="pages/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
 
-    <div class="parallax">
+    <div class="parallax-fixed-height">
         <section >
             <article>
-    
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-xl-12 d-flex justify-content-center pt-5">
+                            <h1 class="text-white">HOY COMIENZA TU CAMBIO</h1>                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-xl-12 d-flex justify-content-center">
+                            <h1 class="text-white">ENTRENA DESDE TU CASA</h1>                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-xl-12 d-flex justify-content-center pt-5">
+                            <a class="btn btn-primary btn-lg" href="pages/entrenamientos.html" role="button">Comienza ahora</a>                           
+                        </div>
+                    </div>
+                </div>
             </article>
+
+
         </section>
     </div>
 
@@ -65,53 +88,9 @@
         </div>
     </footer>
 
-
-    <!--
-    <div id="grilla">
-        <header>
-            <img id="headerLogo" src="assets/img/logo.png" alt="logo sitio">
-        </header>
-        <nav>
-			<ul id="ulNav">
-				<li><a class="nav__whiteLink" href="index.html">Home</a></li>
-                <li><a class="nav__whiteLink" href="pages/entrenamientos.html">Entrenamientos</a></li>
-                <li><a class="nav__whiteLink" href="pages/profesores.html">Profesores</a></li>
-                <li><a class="nav__whiteLink" href="pages/opiniones.html">Opiniones</a></li>
-                <li><a class="nav__whiteLink" href="pages/contacto.html">Contacto</a></li>
-			</ul>
-            <img id="menuBurger" src="assets/img/burguer-icon.png" alt="navegador">
-		</nav>
-
-        <div id="main" class="parallax">
-            <section >
-                <article>
-        
-                </article>
-            </section>
-        </div>
-
-        <aside>
-            <ul id="ulNav_Aside">
-                <li><a class="nav__whiteLink" href="index.html">Home</a></li>
-                <li><a class="nav__whiteLink" href="pages/entrenamientos.html">Entrenamientos</a></li>
-                <li><a class="nav__whiteLink" href="pages/profesores.html">Profesores</a></li>
-                <li><a class="nav__whiteLink" href="pages/opiniones.html">Opiniones</a></li>
-                <li><a class="nav__whiteLink" href="pages/contacto.html">Contacto</a></li>
-            </ul>
-        </aside>
-      
-        <footer>
-            <h3>Seguinos en: </h3>
-            <a href="https://www.facebook.com/"><img class="footer-flex__redes__icons" src="assets/img/facebook-icon.jpg" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img class="footer-flex__redes__icons" src="assets/img/instagram-icon.jpg" alt="Instagram"></a>
-            <a href="https://www.youtube.com/"><img class="footer-flex__redes__icons" src="assets/img/youtube-icon.jpg" alt="Youtube"></a>
-            <a href="https://web.whatsapp.com/"><img class="footer-flex__redes__icons" src="assets/img/whatsapp-icon.jpg" alt="Whatsapp"></a>
-        </footer>
-    </div>
-    -->
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
 

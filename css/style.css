@@ -8,9 +8,9 @@
     font-size: large;
 }
 
-.parallax {
+.parallax,
+.parallax-fixed-height {
     background-image: url("../assets/img/image-running.jpg");
-    height: 50rem;
     margin-bottom: none;
     background-attachment: fixed;
     background-position: center;
@@ -18,9 +18,17 @@
     background-size: cover;
 }
 
-.footer-flex__redes__icons {
-    height: 3rem; 
+.parallax-fixed-height {
+    height: 50rem;
 }
+
+
+h1 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+}
+
 
 h3 {
     color: white;
@@ -30,6 +38,34 @@ h3 {
     padding-right: 0.5rem;
 }
 
+.footer-flex__redes__icons {
+    height: 3rem; 
+}
+
+iframe {
+    width: 27rem;
+}
+
+.form-span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+
+.form-flex__formulario {
+    background-color: white;
+    width: 50rem;
+    border-radius: 1rem;
+}
+
+.form-flex__input {
+    width: 95%;
+    height: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.section-quienes-somos {
+    padding-top: 7rem;
+}
 
 @media screen and (min-width: 320px) {
 
@@ -38,19 +74,23 @@ h3 {
         height: 98px;
     }
 
+    h3 {
+        display: none;
+    }
+
+    iframe {
+        width: 15rem;
+    }
+
+    /*
     h3,
     #ulNav {
         display: none;
     }
-
-    #menuBurger {
-        display: block;
-        width: 70px;
-        height: 70px;
-    }
-
+    */
 
 }
+
 
 
 @media screen and (min-width: 768px) {
@@ -60,21 +100,19 @@ h3 {
         width: 225px;
         height: 98px;
     }
-
+    /*
     #ulNav {
         width: 100%;
         display: flex;  
         flex-direction: row; 
         justify-content: space-around;
     }
+    */
 
     h3 {
         display: block;
     }
   
-    #menuBurger {
-        display: none;
-    }
 
     a { 
         transition: all 0.5s;
@@ -88,47 +126,3 @@ h3 {
  }
 
 
-
- /* --------------------------------------------------------------------------- */
-/* -------------- 2) contacto.html                              -------------- */
-/* --------------------------------------------------------------------------- */
-
-.form-flex{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 1rem;
-}
-
-.form-flex__formulario {
-    background-color: white;
-    margin-top: 1rem;
-    border-radius: 1rem;
-    width: 50rem;
-    height: 27rem;
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-}
-
-.form-flex__span {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
-}
-
-.form-flex__input {
-    width: 95%;
-    height: 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.form-flex__textArea {
-    width: 95%;
-    height: 8rem;
-    margin-bottom: 1rem;
-}
-
-.form-flex__submit {
-    width: 8rem;
-    height: 3rem;
-}
