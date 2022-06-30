@@ -7,17 +7,17 @@
   font-size: large;
 }
 
-.parallax-fixed-height {
-  height: 50rem;
-}
-
-.parallax-fixed-height, .parallax {
+.parallax, .parallax-fixed-height {
   background-image: url("../assets/img/image-running.jpg");
   margin-bottom: none;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parallax-fixed-height {
+  height: 50rem;
 }
 
 h1 {

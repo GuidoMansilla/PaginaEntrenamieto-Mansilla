@@ -1,26 +1,37 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import "colores";
+
+$estilos: (
+    color-blanco: white,
+    ancho-iframe: 27rem, 
+    ancho-form: 50rem,
+);
+
+@mixin alto($height) {
+    height: $height;    
+}
 
 .nav__whiteLink {
-    color: $color_blanco;
+    color: map-get($estilos , color-blanco );
     font-family: 'Permanent Marker', cursive; 
     text-decoration-line: none;
     font-size: large;
 }
 
 
-.parallax-fixed-height {
-    height: 50rem;
-  }
-  .parallax-fixed-height, .parallax {
+.parallax {
     background-image: url("../assets/img/image-running.jpg");
     margin-bottom: none;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
+
+.parallax-fixed-height {
+    @extend .parallax;
+    @include alto(50rem);
+}
 
 
 h1 {
@@ -31,7 +42,7 @@ h1 {
 
 
 h3 {
-    color: $color_blanco;
+    color: map-get($estilos , color-blanco );
     font-family: 'Permanent Marker', cursive; 
     text-decoration-line: none;
     padding-top: 0.5rem;
@@ -39,11 +50,11 @@ h3 {
 }
 
 .footer-flex__redes__icons {
-    height: 3rem; 
+    @include alto(3rem);
 }
 
 iframe {
-    width: 27rem;
+    width: map-get($estilos , ancho-iframe);
 }
 
 .form-span {
@@ -52,14 +63,14 @@ iframe {
 }
 
 .form-flex__formulario {
-    background-color: $color_blanco;
-    width: 50rem;
+    background-color: map-get($estilos , color-blanco );
+    width: map-get($estilos , ancho-form);
     border-radius: 1rem;
 }
 
 .form-flex__input {
     width: 95%;
-    height: 1.25rem;
+    @include alto(1.25rem);
     margin-bottom: 1rem;
 }
 
@@ -71,7 +82,7 @@ iframe {
 
     #headerLogo {
         width: 225px;
-        height: 98px;
+        @include alto(98px);
     }
 
     h3 {
@@ -91,7 +102,7 @@ iframe {
 
     #headerLogo {
         width: 225px;
-        height: 98px;
+        @include alto(98px);
     }
 
     h3 {
