@@ -1,15 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import 'utilities/mixins';
+@import 'utilities/maps';
 
-$estilos: (
-    color-blanco: white,
-    ancho-iframe: 27rem, 
-    ancho-form: 50rem,
-);
 
-@mixin alto($height) {
-    height: $height;    
-}
+
 
 .nav__whiteLink {
     color: map-get($estilos , color-blanco );
@@ -18,6 +13,9 @@ $estilos: (
     font-size: large;
 }
 
+h2{
+    text-align: center;
+}
 
 .parallax {
     background-image: url("../assets/img/image-running.jpg");

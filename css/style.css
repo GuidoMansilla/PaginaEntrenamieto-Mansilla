@@ -7,6 +7,10 @@
   font-size: large;
 }
 
+h2 {
+  text-align: center;
+}
+
 .parallax, .parallax-fixed-height {
   background-image: url("../assets/img/image-running.jpg");
   margin-bottom: none;
